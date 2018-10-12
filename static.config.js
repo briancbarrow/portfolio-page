@@ -2,7 +2,7 @@ import axios from 'axios'
 
 //import withCss from 'react-static/lib/plugins/withCssLoader'
 //import withFiles from 'react-static/lib/plugins/withFileLoader'
-//import myPresentations from './src/data/presentations'
+import myPresentations from './src/data/presentations'
 
 
 export default {
@@ -11,7 +11,7 @@ export default {
   }),
   getRoutes: async () => {
     const { data: posts } = await axios.get('https://jsonplaceholder.typicode.com/posts')
-    //const { data: presentations } = myPresentations
+    const { data: presentations } = myPresentations
     return [
       {
         path: '/',
@@ -35,19 +35,19 @@ export default {
           }),
         })),
       },
-      // {
-      //   path: '/presentations',
-      //   component: 'src/containers/Presentations',
-      //   getData: () => ({
-      //     presentations,
-      //   }),
-      //   children: presentations.map(presentation => ({
-      //     component: 'src/containers/Presentation',
-      //     getData: () => ({
-      //       presentation,
-      //     }),
-      //   })),
-      // },
+      {
+        path: '/presentations',
+        component: 'src/containers/Presentations',
+        getData: () => ({
+          presentations,
+        }),
+        children: presentations.map(presentation => ({
+          component: 'src/containers/Presentation',
+          getData: () => ({
+            presentation,
+          }),
+        })),
+      },
       {
         is404: true,
         component: 'src/containers/404',

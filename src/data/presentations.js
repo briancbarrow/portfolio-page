@@ -1,4 +1,4 @@
-import profileImg from '../images/profile2min.jpg'
+//import profileImg from '../images/profile2min.jpg'
 
 
 export const presentations = [
