@@ -23,6 +23,15 @@ img {
 nav {
   width: 100%;
   background: #108db8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#homeLink {
+  font-size: 2rem;
+  padding: 0 10px;
+  margin-right: auto;
 }
 
 nav a {
@@ -49,4 +58,167 @@ nav a {
 
 p.about-info {
   text-align: left;
+}
+
+#presentationPage {
+  text-align: center;
+}
+
+li.presentation {
+  list-style: none;
+  background-color: #283044;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+ul.presentations {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.presentation a {
+  height: 100%;
+  max-width: 500px;
+  background-color: #283044;
+  color: #f9f2f2;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.presentation a img {
+  width: 100%;
+}
+
+div#projectsPage {
+  text-align: center;
+}
+
+#projects {
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    list-style: none;
+}
+.project {
+  -webkit-box-ordinal-group: 1;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-box-flex: 0;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 20px;
+  border: 1px solid #000;
+  min-width: 300px;
+  max-width: 360px;
+  color: #000;
+  text-decoration: none;
+  border-radius: 1px;
+  background-color: #283044;
+  transition: background-color .25s,color .25s,ease-in-out;
+}
+
+.project:hover {
+  background-color: #97C8EB;
+  color: #47454c;
+}
+
+.project-link {
+  width: 100%;
+  background-color: #283044;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.project ul {
+  padding: 0;
+  min-height: 54px;
+  margin: 3px 0;
+  list-style: none;
+}
+
+.project ul li {
+  list-style: none;
+  padding: 5px;
+}
+
+.project .project-tech, .project a {
+  color: #bfbdc1;
+}
+
+#projects hr {
+  border: 1px dotted #bfbdc1;
+  width: 100%;
+}
+
+.project-tech h3 {
+  text-align: left;
+  margin: 10px 20px;
+}
+
+.project-tech ul {
+  -webkit-column-count: 2;
+  column-count: 2;
+  list-style: none;
+}
+
+.project-image {
+  width: auto;
+  height: 220px;
+}
+
+.project:hover .project-tech, .project:hover a {
+  color: #47454c;
+}
+
+.presentation:hover a {
+  color: #47454c;
+  background-color: #97C8EB;
+}
+
+.project-header {
+  color: #f9f2f2;
 }

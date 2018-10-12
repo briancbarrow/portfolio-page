@@ -11,7 +11,8 @@ const App = () => (
   <Router>
     <div>
       <nav>
-        <Link exact to="/">Home</Link>
+        <Link id="homeLink" exact to="/">Brian Barrow</Link>
+        <Link exact to="/">Projects</Link>
         <Link to="/about">About</Link>
         <Link to="/presentations">Presentations</Link>
         <Link to="https://github.com/briancbarrow"><FontAwesome name='github' /> GitHub</Link>
