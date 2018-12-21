@@ -8,14 +8,14 @@ export const myProjects = [
     github_server: "https://github.com/briancbarrow/fcc-directory-server",
     image: "fcc-directory.PNG"
   },
-  {
-    name: "Basketball Battle App",
-    link: "http://bball-battle.herokuapp.com/",
-    tech: ["React", "Node.js", "Mongoose", "Express"],
-    github: "https://github.com/briancbarrow/bball-battle",
-    github_server: "https://github.com/briancbarrow/bball-server",
-    image: "bball-battle.PNG"
-  },
+  // {
+  //   name: "Basketball Battle App",
+  //   link: "http://bball-battle.herokuapp.com/",
+  //   tech: ["React", "Node.js", "Mongoose", "Express"],
+  //   github: "https://github.com/briancbarrow/bball-battle",
+  //   github_server: "https://github.com/briancbarrow/bball-server",
+  //   image: "bball-battle.PNG"
+  // },
   {
     name: "Meetup Finder",
     link: "https://meetup-finder.firebaseapp.com/",
@@ -30,13 +30,13 @@ export const myProjects = [
     github: "https://github.com/briancbarrow/node-capstone",
     image: "bballdata.PNG"
   },
-  // {
-  //   name: "D3 Bar Chart",
-  //   link: "https://briancbarrow.github.io/d3-bar-chart/",
-  //   tech: ["D3.js", "CSS", "JavaScript", "HTML"],
-  //   github: "https://github.com/briancbarrow/d3-bar-chart",
-  //   image: "d3-chart.PNG"
-  // },
+  {
+    name: "D3 Bar Chart",
+    link: "https://briancbarrow.github.io/d3-bar-chart/",
+    tech: ["D3.js", "CSS", "JavaScript", "HTML"],
+    github: "https://github.com/briancbarrow/d3-bar-chart",
+    image: "d3-chart.PNG"
+  },
   {
     name: "Simon Game",
     link: "https://briancbarrow.github.io/simon-game/",

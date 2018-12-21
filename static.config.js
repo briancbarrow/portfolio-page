@@ -5,7 +5,7 @@
 import { myPresentations } from './src/data/presentations';
 import { myProjects } from './src/data/projects';
 
-console.log(myPresentations)
+
 export default {
   getSiteData: () => ({
     title: 'React Static',
