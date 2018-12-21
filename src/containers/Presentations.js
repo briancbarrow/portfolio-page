@@ -11,7 +11,7 @@ export default withRouteData(({ presentations }) => (
                 <li className="presentation" key={p.name}>
                     <Link to={p.link}>
                         <h2 className="presentation-header">{ p.name }</h2>
-                        <img src={require("../images/" + p.image) } />
+                        <img alt={p.text} src={require("../images/" + p.image) } />
                         <p className="desc">{ p.text }</p>
                     </Link>
                 </li>

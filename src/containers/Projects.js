@@ -27,7 +27,7 @@ export default withRouteData(({ projects }) => (
                         <h3>Technologies used:</h3>
                         <ul>
                             {p.tech.map(tech => (
-                                <li className="tech">{tech}</li>
+                                <li className="tech" key={`tech-${tech}`}>{tech}</li>
                             ))}
                         </ul>
                     </div>
