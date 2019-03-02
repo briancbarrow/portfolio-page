@@ -1,5 +1,11 @@
-
 export const myProjects = [
+  {
+    name: "Tabletop Curling Scorecard",
+    link: "https://tabletop-curling.firebaseapp.com/",
+    tech: ["Vue.js", "Sass"],
+    github: "https://github.com/briancbarrow/curling-vue",
+    image: "tabletop-curling.png"
+  },
   {
     name: "FreeCodeCamp - SLC Directory",
     link: "https://directory-fcc-slc.firebaseapp.com/",
@@ -26,7 +32,7 @@ export const myProjects = [
   {
     name: "NBA Salary Per Minute",
     link: "https://fast-dusk-74105.herokuapp.com/",
-    tech: ["D3.js","Node.js", "MongoDB", "Express"],
+    tech: ["D3.js", "Node.js", "MongoDB", "Express"],
     github: "https://github.com/briancbarrow/node-capstone",
     image: "bballdata.PNG"
   },
@@ -57,7 +63,7 @@ export const myProjects = [
     tech: ["JavaScript", "CSS", "HTML"],
     github: "https://github.com/briancbarrow/pomodoro",
     image: "Pomodoro.PNG"
-  },
+  }
   // {
   //   name: "Weather App",
   //   link: "http://codepen.io/briancbarrow/full/xZOMGE",

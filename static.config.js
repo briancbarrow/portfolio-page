@@ -2,29 +2,29 @@
 
 //import withCss from 'react-static/lib/plugins/withCssLoader'
 //import withFiles from 'react-static/lib/plugins/withFileLoader'
-import { myPresentations } from './src/data/presentations';
-import { myProjects } from './src/data/projects';
-
+import { myPresentations } from "./src/data/presentations";
+import { myProjects } from "./src/data/projects";
 
 export default {
   getSiteData: () => ({
-    title: 'React Static',
+    title: "React Static"
   }),
   getRoutes: async () => {
     //const { data: posts } = await axios.get('https://jsonplaceholder.typicode.com/posts')
     const presentations = myPresentations;
     const projects = myProjects;
+    console.log(projects);
     return [
       {
-        path: '/',
-        component: 'src/containers/Projects',
+        path: "/",
+        component: "src/containers/Projects",
         getData: () => ({
-          projects,
+          projects
         })
       },
       {
-        path: '/about',
-        component: 'src/containers/About',
+        path: "/about",
+        component: "src/containers/About"
       },
       // {
       //   path: '/blog',
@@ -41,11 +41,11 @@ export default {
       //   })),
       // },
       {
-        path: '/presentations',
-        component: 'src/containers/Presentations',
+        path: "/presentations",
+        component: "src/containers/Presentations",
         getData: () => ({
-          presentations,
-        }),
+          presentations
+        })
         // children: presentations.map(presentation => ({
         //   component: 'src/containers/Presentation',
         //   getData: () => ({
@@ -55,9 +55,9 @@ export default {
       },
       {
         is404: true,
-        component: 'src/containers/404',
-      },
-    ]
-  },
+        component: "src/containers/404"
+      }
+    ];
+  }
   //webpack: [withCss, withFiles],
-}
+};
